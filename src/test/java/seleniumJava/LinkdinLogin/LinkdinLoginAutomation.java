@@ -18,7 +18,7 @@ public class LinkdinLoginAutomation {
 
 		Scanner sc = new Scanner(System.in);
 
-//		System.out.println("please choose an option");
+System.out.println("please choose an option");
 //		System.out.println("1. Sign IN");
 //		System.out.println("Please enter 1:Chrome 2:Edge 3:Firefox");
 //		int choice=sc.nextInt();
