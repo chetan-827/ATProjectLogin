@@ -11,7 +11,7 @@ public class LinkedinActions extends ReusableMethods {
 		LinkedinActions actions=new LinkedinActions();
 		
 		// TC-01 Login to Linkedin application with valid Username(Email) and Password
-		//actions.login_validUnPwd();
+		actions.login_validUnPwd();
 		// TC-02 Verify login with invalid Username(Email) and Password 
 		//actions.login_invalidUnPwd();
 		// TC-03 Verify login with blank Username(Email) and Password
@@ -21,12 +21,12 @@ public class LinkedinActions extends ReusableMethods {
 		// TC-05 Verify the functionality of Show password button
 		//actions.showPwd();
 		// TC-06 Verify that the "Keep me logged in" checkbox function correctly 
-	//	actions.checkbox();
+		//actions.checkbox();
 		//actions.readExcel("G:\\Sunny\\SunnyLinkedInProject\\linkedinLogin\\Excelsheets\\LinkedinLoginTestCases.xlsx");
 //		actions.readAndPerform("openBrowser", "chrome", "");
 //		actions.readAndPerform("navToURL", "https://www.linkedin.com/", "");
 //		actions.readAndPerform("click","//*[@class='nav__button-secondary btn-secondary-emphasis btn-md']", "");
-		actions.readtestcases("G:\\\\Sunny\\\\SunnyLinkedInProject\\\\linkedinLogin\\\\Excelsheets\\\\LinkedinLoginTestCases.xlsx");
+	//	actions.readtestcases("G:\\Sunny\\SunnyLinkedInProject\\linkedinLogin\\Excelsheets\\LinkedinLoginTestCases.xlsx");
 	//	actions.readTestSteps("G:\\Sunny\\SunnyLinkedInProject\\linkedinLogin\\Excelsheets\\LinkedinLoginTestCases.xlsx");
 	}
 	
@@ -46,7 +46,7 @@ public class LinkedinActions extends ReusableMethods {
 		//Click on Sign in button.
 		click("//*[@aria-label='Sign in']");
 		// Verify successful login  
-		verify_text("//*[@class='t-16 t-black t-bold']", "Inturi Chaitanya Sai");
+		verify_text("//*[@class='profile-card-name text-heading-large']", "Inturi Chaitanya Sai");
 	}
 	
 	public void login_invalidUnPwd() {

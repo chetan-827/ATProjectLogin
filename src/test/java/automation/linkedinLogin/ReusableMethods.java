@@ -60,7 +60,7 @@ public class ReusableMethods {
 	}
 
 	public void is_selected(String xpath) {
-		if (driver.findElement(By.xpath(xpath)).isSelected() == true) {
+		if (driver.findElement(By.xpath(xpath)).isSelected() == false) {
 			click(xpath);
 		} else {
 			System.out.println("Check box is already checked");
@@ -70,7 +70,7 @@ public class ReusableMethods {
 	public void readExcel(String excelfilename) {
 		try {
 			FileInputStream file = new FileInputStream(excelfilename);
-
+			
 			Workbook workbook = WorkbookFactory.create(file);
 			Sheet sheet = workbook.getSheet("TestCases");
 			Row headerrow = sheet.getRow(0);
